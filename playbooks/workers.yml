@@ -23,8 +23,7 @@
       wait_for: "host={{ hostvars['master']['ansible_default_ipv4']['address'] }} port=6443 timeout=1"
 #      wait_for: "host=master port=6443 timeout=10"
     - name: join cluster
-#      shell: "{{ hostvars['master'].join_command }} >> node_joined.log"
-      shell: "master.join_command >> node_joined.log"
+      shell: "{{ hostvars['master'].join_command }} >> node_joined.log"
       args:
         chdir: /home/kubeadmin
         creates: node_joined.log

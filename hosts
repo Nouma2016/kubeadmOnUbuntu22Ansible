@@ -1,10 +1,10 @@
 [masters]
- master ansible_host=x.x.x.x ansible_user=kubeadmin
+ master ansible_host=20.111.54.47 ansible_user=kubeadmin
  
 [workers]
- worker1 ansible_host=x.x.x.x ansible_user=kubeadmin
- worker2 ansible_host=x.x.x.x ansible_user=kubeadmin
+ worker1 ansible_host=20.199.123.142 ansible_user=kubeadmin
+ worker2 ansible_host=20.111.43.183 ansible_user=kubeadmin
  
 #[all:vars]
 # Upadte this to match with your system
-# ansible_python_interpreter=/usr/local/bin/python3
+#ansible_python_interpreter=/usr/local/bin/python3
